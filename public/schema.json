@@ -1,0 +1,437 @@
+[
+  {
+    "id": "details",
+    "title": "Program Details",
+    "fields": [
+      {
+        "key": "programme_event_name",
+        "label": "Programme / event name",
+        "type": "text",
+        "options": [],
+        "required": true,
+        "integer": false
+      },
+      {
+        "key": "programme_category",
+        "label": "Programme category",
+        "type": "select",
+        "options": [
+          "ABC \u2014 Alumni Back to Campus",
+          "Convocation",
+          "Other alumni programme"
+        ],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "event_status",
+        "label": "Event status",
+        "type": "select",
+        "options": [
+          "Upcoming / planned",
+          "Ongoing",
+          "Completed"
+        ],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "faculty_department",
+        "label": "Faculty / department",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "campus_branch",
+        "label": "Campus / branch",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "start_date",
+        "label": "Start date",
+        "type": "date",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "end_date",
+        "label": "End date",
+        "type": "date",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "venue_location",
+        "label": "Venue / location",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "event_level",
+        "label": "Event level",
+        "type": "select",
+        "options": [
+          "Campus / local",
+          "State",
+          "National",
+          "International"
+        ],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "programme_description",
+        "label": "Programme description",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "team_leader_name",
+        "label": "Team leader name",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "designation",
+        "label": "Designation",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "email_address",
+        "label": "Email address",
+        "type": "email",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "contact_number",
+        "label": "Contact number",
+        "type": "tel",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "organising_team",
+        "label": "Organising team",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "partners_collaborators",
+        "label": "Partners / collaborators",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      }
+    ]
+  },
+  {
+    "id": "outcomes",
+    "title": "Objectives & outcomes",
+    "fields": [
+      {
+        "key": "programme_objectives",
+        "label": "Programme objectives",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "intended_beneficiaries",
+        "label": "Intended beneficiaries",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "success_indicators_targets",
+        "label": "Success indicators / targets",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "target_alumni_participation",
+        "label": "Target alumni participation",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "actual_alumni_participation",
+        "label": "Actual alumni participation",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "other_participants",
+        "label": "Other participants",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "alumni_roles",
+        "label": "Alumni roles",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "expected_outcomes",
+        "label": "Expected outcomes",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "actual_activities_and_outcomes",
+        "label": "Actual activities and outcomes",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "impact_on_students_alumni_community",
+        "label": "Impact on students / alumni / community",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "evidence_of_impact",
+        "label": "Evidence of impact",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "challenges_lessons_learned",
+        "label": "Challenges & lessons learned",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      }
+    ]
+  },
+  {
+    "id": "financial",
+    "title": "Financial",
+    "fields": [
+      {
+        "key": "proposed_budget_rm",
+        "label": "Proposed budget (RM)",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "programme_university_revenue_rm",
+        "label": "Faculty / Campus / University revenue (RM)",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "alumni_vendor_gross_sales_rm",
+        "label": "Alumni vendor gross sales (RM)",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "cash_sponsorship_received_rm",
+        "label": "Sponsorship received (RM)",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "in_kind_contributions",
+        "label": "In-kind contributions",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      }
+    ]
+  },
+  {
+    "id": "photos",
+    "title": "Photos and Evidence",
+    "fields": [
+      {
+        "key": "photo_notes_credits",
+        "label": "Photo notes / credits",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      }
+    ]
+  },
+  {
+    "id": "convocation",
+    "title": "Convocation",
+    "fields": [
+      {
+        "key": "convocation_edition_name",
+        "label": "Convocation edition / name",
+        "type": "text",
+        "options": [],
+        "required": true,
+        "integer": false
+      },
+      {
+        "key": "session_date_details",
+        "label": "Session / date details",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "convocation_coordinator",
+        "label": "Convocation coordinator",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "booth_activity_location",
+        "label": "Booth / activity location",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "alumni_activities_planned",
+        "label": "Alumni activities planned",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "registration_campaign_approach",
+        "label": "Registration campaign / approach",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "officer_team_responsible",
+        "label": "Officer / team responsible",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "booth_shift",
+        "label": "Booth / shift",
+        "type": "text",
+        "options": [],
+        "required": false,
+        "integer": false
+      },
+      {
+        "key": "target_new_registrations",
+        "label": "Target new registrations",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "alumni_assisted",
+        "label": "Alumni assisted",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "participant_reported_completions",
+        "label": "Participant-reported completions",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "officer_verified_new_registrations",
+        "label": "Officer-verified new registrations",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "already_registered_alumni",
+        "label": "Already registered alumni",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "pending_needs_assistance",
+        "label": "Pending / needs assistance",
+        "type": "number",
+        "options": [],
+        "required": false,
+        "integer": true
+      },
+      {
+        "key": "verification_method_notes",
+        "label": "Verification method / notes",
+        "type": "textarea",
+        "options": [],
+        "required": false,
+        "integer": false
+      }
+    ]
+  }
+]
