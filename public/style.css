@@ -2,3 +2,12 @@
 
 /* ICAN form corrections */
 .section-heading{color:var(--purple);font-size:13px;font-weight:700;margin-bottom:8px}.field-group>h2{margin-bottom:20px}.field-help{font-size:11px;font-weight:400;line-height:1.5}.date-start{grid-column:1}
+/* Language preference is available before and after sign-in. */
+.report-language-bar{height:48px;display:flex;align-items:center;justify-content:flex-end;padding:0 36px;background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+.report-language-switch{display:inline-flex;gap:3px;padding:3px;border:1px solid #dfd5e8;border-radius:9px;background:#f6f3f9;box-shadow:0 1px 3px #321e4b06}
+.report-language-switch button{min-width:43px;min-height:29px;padding:5px 10px;border:0;border-radius:6px;background:transparent;color:#786784;font-size:11px;line-height:1.2;font-weight:750;letter-spacing:.5px}
+.report-language-switch button:hover{background:#eae1f2;color:var(--purple)}
+.report-language-switch button.selected{background:var(--purple);color:white;box-shadow:0 2px 5px #63339226}
+aside{top:48px}.login-screen{min-height:calc(100vh - 48px)}
+@media(max-width:900px){aside{top:auto}.report-language-bar{padding:0 22px}}
+@media(max-width:600px){.report-language-bar{padding:0 16px}header{height:auto;min-height:70px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}}
