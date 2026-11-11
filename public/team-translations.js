@@ -321,3 +321,18 @@ window.TeamTranslations = {
   "Only the uploader, topic owner or administrator can remove this attachment.": "Hanya pemuat naik, pemilik topik atau pentadbir boleh membuang lampiran ini.",
   "Request expired. Refresh the page and try again.": "Permintaan tamat tempoh. Muat semula halaman dan cuba lagi."
 };
+Object.assign(window.TeamTranslations, {
+ 'Planned by today':'Dirancang sehingga hari ini',
+ 'Actual reported':'Kemajuan sebenar dilaporkan',
+ 'Not updated':'Belum dikemas kini',
+ 'Updates incomplete':'Kemas kini belum lengkap',
+ 'Behind current plan':'Ketinggalan daripada rancangan semasa',
+ 'View detailed trend chart':'Lihat carta trend terperinci',
+ 'View detailed timeline':'Lihat garis masa terperinci',
+ 'Progress cannot be compared until every activity has an update.':'Kemajuan belum boleh dibandingkan sehingga setiap aktiviti mempunyai kemas kini.',
+ 'By today, planned progress is {plan}%. Reported progress is {actual}% — {gap} percentage points behind the current plan.':'Setakat hari ini, kemajuan dirancang ialah {plan}%. Kemajuan dilaporkan ialah {actual}% — ketinggalan {gap} mata peratusan daripada rancangan semasa.',
+ 'By today, planned progress is {plan}%. Reported progress is {actual}% — {gap} percentage points ahead of the current plan.':'Setakat hari ini, kemajuan dirancang ialah {plan}%. Kemajuan dilaporkan ialah {actual}% — mendahului rancangan semasa sebanyak {gap} mata peratusan.',
+ 'By today, planned progress is {plan}%. Reported progress is {actual}% — on track with the current plan.':'Setakat hari ini, kemajuan dirancang ialah {plan}%. Kemajuan dilaporkan ialah {actual}% — selaras dengan rancangan semasa.',
+ '{done} of {total} activities completed · {reported} of {total} updated':'{done} daripada {total} aktiviti selesai · {reported} daripada {total} dikemas kini',
+ 'Planned uses the current start and finish dates, with steady progress assumed between them. Actual uses the latest dated update for each activity, not a live measurement. Topic percentages use original activity weights.':'Kemajuan dirancang menggunakan tarikh mula dan tamat semasa, dengan andaian kemajuan sekata antara kedua-duanya. Kemajuan sebenar menggunakan kemas kini bertarikh terakhir bagi setiap aktiviti, bukan ukuran langsung. Peratusan topik menggunakan wajaran asal aktiviti.'
+});
