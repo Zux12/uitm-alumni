@@ -24,3 +24,31 @@
 .page .story-copy{font-size:16px;line-height:1.85;margin:18px 0}
 .page{height:auto;padding-bottom:78px}
 @media(max-width:750px){.page .story-copy{font-size:16px;line-height:1.8}}
+
+/* Fixed A4 sheets: content is paginated before responsive scaling. */
+.book{display:flex;align-items:flex-start;--sheet-scale:1;max-width:1080px}
+.page-slot{width:50%;height:100%;position:relative;overflow:hidden;flex:none;background:var(--paper)}
+.page-slot.right.empty{background:transparent;box-shadow:none}
+.page.sheet{position:absolute;left:0;top:0;width:540px!important;height:763.7142857px!important;min-height:0!important;max-height:763.7142857px!important;padding:40px 38px 64px!important;transform:scale(var(--sheet-scale));transform-origin:top left;overflow:hidden}
+.sheet .page-content{height:659.7142857px;overflow:hidden;display:flow-root}
+.sheet h2{font-size:44px!important;line-height:1.08;letter-spacing:-1.6px;margin:24px 0}
+.sheet h3.continuation-title{font:26px/1.15 Georgia;margin:12px 0 24px}
+.sheet p,.sheet p.story-copy{font:16px/1.75 Georgia;margin:16px 0;text-align:justify}
+.sheet p.source{font:11px/1.6 Arial;text-align:left;margin:18px 0}
+.sheet p.lead{font:23px/1.45 Georgia;text-align:left}
+.sheet p.smallcredit{font:11px/1.8 Arial!important;text-align:left}
+.sheet .folio{left:38px!important;right:38px!important;bottom:22px}
+.sheet .story-art,.sheet.layout-5 .story-art,.sheet.layout-6 .story-art{height:235px;margin:22px 0}
+.sheet .kicker{font:10px Arial;letter-spacing:2px}
+.sheet .uitm-logo{width:124px;height:62px;margin-bottom:28px}
+.sheet.cover h2{font-size:78px!important;letter-spacing:-4px;margin:8px 0}
+.sheet.cover .art{height:100%;margin:0;inset:0}
+.sheet.cover .cover-title{left:38px;font:48px/1.02 Georgia;bottom:102px}
+.sheet.cover .cover-note{left:38px;bottom:49px}
+.sheet.cover .art-label{left:38px;bottom:17px}
+.sheet.cover .uitm-logo{width:118px;height:59px;margin-bottom:19px}
+.sheet.layout-5 .award-heading{font-size:24px}
+.sheet .pull{font:italic 25px/1.4 Georgia;margin:26px 0}
+.measure-sheet{position:fixed!important;left:-10000px!important;top:0!important;visibility:hidden;transform:none!important;--sheet-scale:1;pointer-events:none}
+#turner .sheet{min-height:0!important}
+@media(max-width:750px){.page-slot{width:100%}.page-slot.right{display:none}}
