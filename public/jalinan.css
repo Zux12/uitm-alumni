@@ -62,3 +62,22 @@
 .book > .page-edge-arrow:disabled{visibility:hidden;pointer-events:none}
 @media(max-width:750px){.book > .page-edge-arrow{width:34px;height:64px}.page-edge-arrow span{font-size:40px}}
 @media(prefers-reduced-motion:reduce){.book > .page-edge-arrow{transition:none}}
+
+/* Fine editorial frames and generous continuation-page artwork. */
+.sheet:not(.cover)::before{content:"";position:absolute;inset:15px 15px 43px;border:1px solid rgba(174,141,83,.35);pointer-events:none;z-index:0}
+.sheet:not(.cover)::after{content:"";position:absolute;top:15px;left:15px;width:65px;height:5px;background:linear-gradient(90deg,#513061 68%,#bc985d 68%);pointer-events:none}
+.sheet:not(.cover){background-image:radial-gradient(ellipse at 100% 0,rgba(185,151,88,.10),transparent 45%),linear-gradient(135deg,rgba(89,51,105,.025) 25%,transparent 25%);background-size:auto,12px 12px}
+.sheet.layout-5::before{border-color:rgba(223,196,151,.38)}
+.sheet.layout-5::after{background:linear-gradient(90deg,#dec18c 68%,#b69bc4 68%)}
+.sheet .page-content{position:relative;z-index:1}
+.sheet.cover .page-content{position:static}
+.sheet:not(.cover) .kicker{color:#835c35}
+.sheet.layout-5 .kicker{color:#dfc497}
+.sheet .folio{border-top:1px solid #bba57c;padding-top:10px;color:#74586b}
+.sheet .folio span:last-child{font-weight:bold;color:#80582f}
+.sheet.layout-5 .folio,.sheet.layout-5 .folio span:last-child{color:#e1cda7}
+.sheet .continuation-title{border-bottom:1px solid rgba(174,141,83,.35);padding-bottom:14px}
+.sheet .page-gap-art{position:relative;display:block;width:100%;margin:20px 0 0;padding:0;overflow:hidden;border:1px solid rgba(174,141,83,.4);border-radius:3px 28px 3px 3px;background:#e7ddca;box-sizing:border-box}
+.page-gap-art img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;animation:story-drift 20s ease-in-out infinite alternate}
+.page-gap-art figcaption{position:absolute;bottom:0;left:0;right:0;background:rgba(37,20,46,.76);color:#fff4df;padding:8px 12px;font:8px/1.4 Arial;letter-spacing:1px}
+@media(prefers-reduced-motion:reduce){.page-gap-art img{animation:none}}
