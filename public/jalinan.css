@@ -52,3 +52,13 @@
 .measure-sheet{position:fixed!important;left:-10000px!important;top:0!important;visibility:hidden;transform:none!important;--sheet-scale:1;pointer-events:none}
 #turner .sheet{min-height:0!important}
 @media(max-width:750px){.page-slot{width:100%}.page-slot.right{display:none}}
+
+/* Translucent controls over the outer page margins. */
+.book > .page-edge-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;display:flex;align-items:center;justify-content:center;width:40px;height:76px;padding:0;border:1px solid rgba(255,255,255,.3);background:rgba(255,253,247,.24);color:#472653;box-shadow:0 2px 12px rgba(35,18,43,.08);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);opacity:.65;transition:background .18s,opacity .18s,box-shadow .18s;touch-action:manipulation}
+.page-edge-arrow span{font:46px/1 Georgia,serif;pointer-events:none;text-shadow:0 1px 3px rgba(255,255,255,.85)}
+.book > .edge-prev{left:0;border-radius:0 12px 12px 0;border-left:0}
+.book > .edge-next{right:0;border-radius:12px 0 0 12px;border-right:0}
+.book > .page-edge-arrow:hover,.book > .page-edge-arrow:focus-visible,.book > .page-edge-arrow:active{opacity:1;background:rgba(255,253,247,.82);box-shadow:0 2px 14px rgba(35,18,43,.17)}
+.book > .page-edge-arrow:disabled{visibility:hidden;pointer-events:none}
+@media(max-width:750px){.book > .page-edge-arrow{width:34px;height:64px}.page-edge-arrow span{font-size:40px}}
+@media(prefers-reduced-motion:reduce){.book > .page-edge-arrow{transition:none}}
