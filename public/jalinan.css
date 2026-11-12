@@ -81,3 +81,32 @@
 .page-gap-art img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;animation:story-drift 20s ease-in-out infinite alternate}
 .page-gap-art figcaption{position:absolute;bottom:0;left:0;right:0;background:rgba(37,20,46,.76);color:#fff4df;padding:8px 12px;font:8px/1.4 Arial;letter-spacing:1px}
 @media(prefers-reduced-motion:reduce){.page-gap-art img{animation:none}}
+
+/* Four A4 cover compositions, selected by the edition's publishing metadata. */
+.edition-cover{--cover-ink:#382143;--cover-accent:#dcc18c;position:absolute;inset:0;overflow:hidden;background:var(--cover-ink);color:#fffaf0}
+.edition-cover.cover-palette-forest{--cover-ink:#183b32;--cover-accent:#e0ce9d}
+.edition-cover.cover-palette-navy{--cover-ink:#162d48;--cover-accent:#d5bd8c}
+.edition-cover.cover-palette-terracotta{--cover-ink:#653b30;--cover-accent:#eed5ad}
+.edition-cover-image{position:absolute;inset:0;margin:0}.edition-cover-image img{width:100%;height:100%;object-fit:cover}
+.edition-cover-shade{position:absolute;inset:0;background:linear-gradient(180deg,#180e2666,transparent 38%,#180e26ed 80%)}
+.edition-cover-logo{position:absolute;left:30px;top:28px;z-index:2}
+.sheet.cover .edition-cover-logo .uitm-logo{width:124px;height:64px;padding:9px;background:#fffdf7;margin:0;object-fit:contain}
+.edition-cover-meta{position:absolute;right:30px;top:40px;text-align:right;font:10px/1.7 Arial;letter-spacing:1px;color:#fff8ea}
+.edition-cover-brand{position:absolute;left:30px;right:30px;top:110px;border-top:1px solid #fff8;padding-top:10px}
+.sheet.cover .edition-cover-brand h2{font:78px/1 Georgia!important;letter-spacing:-4px;margin:0 0 8px;color:inherit}
+.edition-cover-brand>span{font:9px/1.4 Arial;letter-spacing:3px}
+.edition-cover-story{position:absolute;left:32px;right:32px;bottom:156px}
+.edition-cover-story>span{font:9px/1.5 Arial;letter-spacing:2px;color:var(--cover-accent)}
+.sheet .edition-cover-story h3{font:46px/1.06 Georgia;margin:15px 0 0;letter-spacing:-1px}
+.edition-cover-teasers{position:absolute;left:32px;right:32px;bottom:46px;list-style:none;padding:15px 0 0;margin:0;border-top:1px solid #d9c08a88;display:flex;gap:16px}
+.edition-cover-teasers li{flex:1;font:11px/1.5 Arial;color:#f5e9ce}
+.edition-cover-credit{position:absolute;bottom:19px;left:32px;font:7px Arial;letter-spacing:1px;color:#e6d9c2}
+.cover-design-framed{border:12px solid var(--cover-ink)}.cover-design-framed:after{content:"";position:absolute;inset:8px;border:1px solid #ddc18a88;pointer-events:none}
+.cover-design-framed .edition-cover-brand{top:109px}.cover-design-framed .edition-cover-story{bottom:156px}
+.cover-design-panorama .edition-cover-image{inset:230px 0 225px}.cover-design-panorama .edition-cover-shade{background:none}
+.cover-design-panorama .edition-cover-brand{top:110px}.cover-design-panorama .edition-cover-story{bottom:122px}
+.cover-design-panorama .edition-cover-story h3{font-size:38px}.cover-design-panorama .edition-cover-teasers{bottom:45px}.cover-design-panorama .edition-cover-logo{left:auto;right:30px}.cover-design-panorama .edition-cover-meta{left:30px;right:auto;text-align:left}
+.cover-design-split .edition-cover-image{inset:235px 0 0 180px}.cover-design-split .edition-cover-shade{background:linear-gradient(90deg,var(--cover-ink) 0 24%,transparent 70%)}
+.cover-design-split .edition-cover-story{left:30px;right:170px;bottom:155px}.cover-design-split .edition-cover-story h3{font-size:42px}.cover-design-split .edition-cover-teasers{background:var(--cover-ink);padding:12px}
+.cover-design-spotlight .edition-cover-image{inset:212px 40px 235px;border-radius:160px 160px 0 0;overflow:hidden}.cover-design-spotlight .edition-cover-shade{background:none}.cover-design-spotlight .edition-cover-logo{left:208px;top:24px}.cover-design-spotlight .edition-cover-meta{top:43px;right:25px;font-size:8px}.cover-design-spotlight .edition-cover-brand{text-align:center;top:110px}.cover-design-spotlight .edition-cover-story{text-align:center;bottom:128px}.cover-design-spotlight .edition-cover-story h3{font-size:38px}
+@media(prefers-reduced-motion:reduce){.edition-cover *{animation:none}}
