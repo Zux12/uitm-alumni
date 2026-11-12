@@ -17,3 +17,10 @@
 @keyframes story-drift{from{transform:scale(1)}to{transform:scale(1.035)}}
 @media(max-width:750px){.story-art{height:235px;margin:22px 0}.layout-5 .story-art{height:225px}.story-art:not(.cover-art) .art-label{font-size:7px}}
 @media(prefers-reduced-motion:reduce){.story-art img{animation:none}}
+
+/* Justified magazine body text; pages grow with the longer bilingual copy. */
+.page p,.below p{text-align:justify;text-align-last:start;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.page .smallcredit,.page .source,.page .lead{text-align:start}
+.page .story-copy{font-size:16px;line-height:1.85;margin:18px 0}
+.page{height:auto;padding-bottom:78px}
+@media(max-width:750px){.page .story-copy{font-size:16px;line-height:1.8}}
