@@ -64,7 +64,9 @@ function paginate(){
  // Contents and navigation retain article IDs; visible numbers use physical pages.
  sheets=sheets.map(sheet=>{const t=document.createElement('template');t.innerHTML=sheet.html;t.content.querySelectorAll('[data-page]').forEach(b=>{const number=b.querySelector('b');if(number)number.textContent=String(starts[Number(b.dataset.page)]+1).padStart(2,'0')});return {...sheet,html:t.innerHTML}});
  // Fill only genuinely spare room after pagination; never displace article text.
- const artForStory={1:'campus',2:'memory',3:'campus',4:'memory',5:'achievement',6:'future',7:'future'};
+ const artForStory={1:'editor',2:'journeys',3:'career',4:'heritage',5:'learning',6:'connections',7:'weaving'};
+ const usedIllustrations=new Set([coverImage,...Object.values(storyImages)]);
+ const supplementalImage=story=>'jalinan-'+artForStory[story]+'.webp';
  sheets=sheets.map(sheet=>{
   if(sheet.cover)return sheet;
   const content=make(sheet.story);content.innerHTML=sheet.html;
@@ -72,15 +74,17 @@ function paginate(){
   const used=last?last.getBoundingClientRect().bottom-content.getBoundingClientRect().top:0;
   const available=Math.floor(content.clientHeight-used-24);
   if(available<155)return sheet;
-  const kind=artForStory[sheet.story];
+  const imageSrc=supplementalImage(sheet.story);
+  if(usedIllustrations.has(imageSrc))return sheet;
   // Avoid repeating the article's lead photograph on the same physical sheet.
   if(content.querySelector('.story-art'))return sheet;
   const figure=document.createElement('figure');figure.className='page-gap-art';
   figure.style.height=Math.min(available,340)+'px';
-  const img=document.createElement('img');img.src=storyImages[kind];img.alt=tr('Ilustrasi editorial AI berkaitan tema halaman','AI editorial illustration related to the page theme');img.decoding='async';
+  const img=document.createElement('img');img.src=imageSrc;img.alt=tr('Ilustrasi editorial AI berkaitan tema halaman','AI editorial illustration related to the page theme');img.decoding='async';
   const caption=document.createElement('figcaption');caption.textContent=tr('ILUSTRASI AI · BUKAN FOTO ACARA','AI ILLUSTRATION · NOT AN EVENT PHOTO');
   figure.append(img,caption);content.appendChild(figure);
   if(content.scrollHeight>content.clientHeight+1){figure.remove();return sheet}
+  usedIllustrations.add(imageSrc);
   return {...sheet,html:content.innerHTML};
  });
  measure.remove();
